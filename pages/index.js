@@ -454,7 +454,7 @@ export default function Home({ OurClients, About, Thumbnails, Videos, Reels, Tes
 
         <div className="container">
 
-          <div className="flex flex-wrap -mx-4 video swiper">
+          <div className="flex flex-wrap -mx-4 video swiper ">
             <Swiper
               spaceBetween={30}
 
@@ -497,7 +497,7 @@ export default function Home({ OurClients, About, Thumbnails, Videos, Reels, Tes
 
                   <div className="w-full md:w-1/2 xl:w-1/3 px-4">
                     <SwiperSlide>
-                      <div className="bg-white rounded-lg overflow-hidden mb-10">
+                      <div className="bg-white rounded-lg overflow-hidden mb-10 hover:shadow-2xl">
                         {/* <img src="assets/Images/TH1.png" alt="image" className="w-full" /> */}
 
                         <iframe id="player" type="text/html" className='w-full h-56'
@@ -598,7 +598,7 @@ export default function Home({ OurClients, About, Thumbnails, Videos, Reels, Tes
                       <SwiperSlide>
 
                         <div class="xl:w-1/4 md:w-1/2 p-4">
-                          <div class="bg-gray-100 rounded-lg">
+                          <div class="bg-gray-100 rounded-lg hover:shadow-2xl">
                             {/* <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content" /> */}
                             <iframe width="320" height="560" scrolling='no' src={`${items.reels.url}embed`} ></iframe>
                             {/* {console.log(items.reels.url)} */}
@@ -658,7 +658,7 @@ export default function Home({ OurClients, About, Thumbnails, Videos, Reels, Tes
               spaceBetween={30}
               autoHeight={true}
 
-              slidesPerView={1}
+              slidesPerView={2}
               autoplay={{
                 delay: 2500,
                 disableOnInteraction: false,
@@ -667,7 +667,7 @@ export default function Home({ OurClients, About, Thumbnails, Videos, Reels, Tes
               breakpoints={{
 
                 1024: {
-                  slidesPerView: 1,
+                  slidesPerView: 2,
                   spaceBetween: 30,
                 },
                 768: {
@@ -793,7 +793,7 @@ export default function Home({ OurClients, About, Thumbnails, Videos, Reels, Tes
                 <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
 
                   <SwiperSlide>
-                    <div class="h-full text-center bg-white">
+                    <div class="h-full text-center bg-white shadow-2xl">
                       <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-white" src={urlFor(items.image).url()} />
 
                       <p class="leading-relaxed">
@@ -846,7 +846,7 @@ export default function Home({ OurClients, About, Thumbnails, Videos, Reels, Tes
         animate={control}
         variants={Varient}
         className="container">
-        <div className="bg-white">
+        <div className="bg-white shadow-xl">
           <div className="text-center mx-auto mb-[60px] lg:mb-20 max-w-[620px]">
             <span className="font-semibold text-lg text-primary mb-2 block pt-20">
               About

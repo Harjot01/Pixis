@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "metropolis";
+  src: url("../public/assets/Images/metropolis/Metropolis-Bold.otf")
+}
+@font-face {
+  font-family: "Proxima";
+  src: url("../public/assets/Images/Proxima-Nova-Font/Proxima.otf")
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+
+
+.gradient {
+
+	background: linear-gradient(334deg, #6b97f7, #6b00bb, #f7137e);
+	background-size: 180% 180%;
+	animation: gradient-animation 5s ease-in infinite;
+}
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.icon{
+  animation: float 5s ease-in-out infinite;
+}
+
+.figma{
+  animation-delay: 1s;
+}
+.photoshop{
+  animation-delay: 0.5s;
+}
+.premiere-pro{
+  animation-delay: 2s;
+}
+
+@keyframes float{
+   0%{
+    transform: translateY(0);
+   }
+   50%{
+    transform: translateY(-25px);
+   }
+   100%{
+    transform: translateY(0);
+   }
+}
+
+
+
+
+.bm-burger-button {
+  
+  width: 36px;
+  height: 30px;
+  left: 36px;
+
+  top: 36px;
+}
+
+.bm-burger-bars {
+  background: #373a47;
+}  
+
+.bm-burger-bars-hover {
+  background: #a90000;
+
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+.bm-cross {
+  background: #bdc3c7;
+}
+
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+.bm-menu {
+  background: #373a47;
+  padding: 0.3rem 0.3rem 0;
+  font-size: 1.15em;
+}
+
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+.bm-item-list {
+
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+.bm-item {
+  display: inline-block;
+}
+
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+/* styling next link component so that will be a column list of links*/
+.bm-item-list a {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-colored { background-color:#000; }
+.nav-transparent { background-color:transparent;}

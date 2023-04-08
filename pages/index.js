@@ -1030,7 +1030,7 @@ export default function Home({ OurClients, About, Thumbnails, Videos, Reels, Tes
                 <h3 className="font-semibold mb-8 text-2xl md:text-[26px]">
                   Send us a Message
                 </h3>
-                <form>
+                <form action="https://formspree.io/f/mayzlwgo" method="POST">
                   <div className="mb-6">
                     <label for="fullName" className="block text-xs text-dark">Full Name*</label>
                     <input type="text" name="fullName" placeholder="Adam Gelius" className="
@@ -1049,15 +1049,7 @@ export default function Home({ OurClients, About, Thumbnails, Videos, Reels, Tes
                   py-4
                 " />
                   </div>
-                  <div className="mb-6">
-                    <label for="phone" className="block text-xs text-dark">Phone*</label>
-                    <input type="text" name="phone" placeholder="+885 1254 5211 552" className="
-                  w-full
-                  border-0 border-b border-[#f1f1f1]
-                  focus:border-primary focus:outline-none
-                  py-4
-                " />
-                  </div>
+                
                   <div className="mb-6">
                     <label for="message" className="block text-xs text-dark">Message*</label>
                     <textarea name="message" rows="1" placeholder="type your message here" className="

@@ -597,7 +597,7 @@ export default function Home({ OurClients, About, Thumbnails, Videos, Reels, Tes
 
         <div className="px-5 mx-auto">
           <div className="flex flex-wrap -m-4">
-            <Marquee gradient={false} speed={15}>
+            <Marquee gradient={false} speed={45}>
               {Thumbnails.map((items) => {
 
                 return (
@@ -891,9 +891,9 @@ export default function Home({ OurClients, About, Thumbnails, Videos, Reels, Tes
                     </div>
                     <div>
                       <h5 className="text-lg font-semibold mb-6">Our Location</h5>
-                      {/* <!-- <p className="text-base text-body-color">
-                401 Broadway, 24th Floor, Orchard Cloud View, London
-              </p> --> */}
+                      <p className="text-base text-body-color">
+                Noida
+              </p>
                     </div>
                   </div>
                   <div className="flex max-w-full w-[330px] mb-8">
@@ -905,10 +905,8 @@ export default function Home({ OurClients, About, Thumbnails, Videos, Reels, Tes
                     </div>
                     <div>
                       <h5 className="text-lg font-semibold mb-6">How Can We Help?</h5>
-                      <p className="text-base text-body-color">info@yourdomain.com</p>
-                      <p className="text-base text-body-color">
-                        contact@yourdomain.com
-                      </p>
+                      <p className="text-base text-body-color"> connect@pixismedia.in</p>
+                      
                     </div>
                   </div>
                 </div>

@@ -595,7 +595,7 @@ export default function Home({ OurClients, About, Thumbnails, Videos, Reels, Tes
           </Marquee>
         </div> */}
 
-        <div className="px-5 py-24 mx-auto">
+        <div className="px-5 mx-auto">
           <div className="flex flex-wrap -m-4">
             <Marquee gradient={false} speed={15}>
               {Thumbnails.map((items) => {

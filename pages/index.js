@@ -603,7 +603,7 @@ export default function Home({ OurClients, About, Thumbnails, Videos, Reels, Tes
                 return (
 
                   <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-                    <a className="block relative max-h-[500px] max-w-[400px] rounded-xl overflow-hidden">
+                    <a className="block relative md:max-h-[500px] md:max-w-[400px] max-w-[200px] max-h-[300px] rounded-xl overflow-hidden">
                       <img alt="ecommerce" className="object-contain object-center w-full h-full block" src={urlFor(items.thumbnailimg).url()} />
                     </a>
 
